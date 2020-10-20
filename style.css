@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html {
+    color: #555;
+    font-family: 'Work Sans', sans-serif;
+}
+ul, nav{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.9;
+}
+a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* header + nav */
+.first h1 {
+    font-weight: 900;
+    font-size: 100px;
+    color: #FBE222;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 8px rgba(167, 167, 167, 0.829);
+}
+.first {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.first .back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.first .back-img:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+header {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(216, 140, 252);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+header nav ul {
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+}
+header nav li {
+    margin: 0 15px;
+}
+header h2{
+    display: flex;
+    color: #fff;
+    font-size: 29px;
+}
+/* slut på header */
+
+/* info del */
+.wrapper .container {
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.info {
+    flex-basis: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+.info p {
+    font-size: 17px;
+    line-height: 1.5em;
+}
+.info h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FF80C1;
+}
+.quick {
+    flex-basis: 35%;
+    margin: 40px;
+    padding: 30px 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 13px;
+    border: 1px solid rgb(224, 224, 224);
+    height: 200px;
+}
+.quick h3 {
+    color: #fce115;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.quick a {
+    text-decoration: underline;
+}
+.quick p{
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+}
+/* slut på info den */
+
+/* inspirations delen */
+.galleri {
+    background-color: rgb(247, 247, 247);
+}
+ul.grid {
+    margin: 90px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galleri .grid li img {
+    width: 100%;
+}
+.galleri .grid li{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    padding: 20px 20px 40px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+    font-size: 25px;
+    color: rgb(136, 136, 136);
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+.galleri .grid li.square{
+    flex-basis: 30%;
+}
+.galleri h3 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #FBE222;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.galleri p {
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+}
+.galleri hr {
+    height: 7px;
+    background-image: linear-gradient(to right, rgb(255, 108, 235), rgb(248, 248, 86));
+    border: hidden;
+    box-shadow: 2px 2px 7px 1px rgb(219, 219, 219);
+    width: 600px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* slut på inspirations delen */
+
+/* Kontakt formulär och sortiment */
+.contact {
+    margin: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#my-form h2{
+    border-bottom: 2px solid rgb(255, 214, 33);
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+#error{
+    color: rgb(255, 9, 9);
+    text-align: left;
+}
+#my-form {
+    border: 2px solid rgb(233, 233, 233);
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 30px;
+}
+#my-form label{
+    display: inline-block;
+    margin: 5px 0;
+}
+#my-form input{
+    padding: 8px;
+    width: 220px;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+#my-form textarea{
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+button{
+    background-color: #FF80C1;
+    box-shadow: inset 0px 0px 7px 3px rgba(190, 190, 190, 0.41);
+    color: white;
+    padding: 10px;
+    margin: 10px 50px;
+    text-align: center;
+    border-radius: 15px;
+    border: hidden;
+    font-size: 17px;
+}
+button:hover{
+    background-color: #fd98cc;
+    cursor: pointer;
+}
+.contact-info {
+    margin: 20px;
+    flex-basis: 30%;
+}
+.contact-info img{
+    max-width: 100%;
+    width: 80%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+}
+.contact-info ul{
+    display: inline-block;
+}
+.contact-info h4{
+    display: inline-block;
+}
+.contact-info ul li{
+    list-style: circle;
+    width: 100%;
+    margin: 5px;
+}
+/* slut på kontakt formulär och sortiment del */
+
+/* Foten av sidan */
+.bottom {
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 150px 40px 150px;
+}
+.bottom ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bottom li i{
+    color: rgb(105, 105, 105);
+    font-size: 35px;
+    padding: 0 20px;
+}
+.bottom p{
+    line-height: 23px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* knapp för att ta sig upp till toppen av sidan */
+.btn {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#toptag {
+    font-size: 30px;
+    background-color: #FBE24B;
+    padding: 20px 30px;
+    border-radius: 200px;
+}
+
+/* Responsivitet */
+@media screen and (max-width: 1400px){
+    .galleri .grid li.square{
+        flex-basis: 35%;
+    }
+    .contact-info img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1150px){
+    .first h1{
+        font-size: 70px;
+    }
+    .quick h3 {
+        font-size: 19px;
+    }
+    .quick p{
+        font-size: 15px;
+    }
+    .galleri h3 {
+        font-size: 40px;
+    }
+    .galleri p {
+        width: 75%;
+        font-size: 19px;
+    }
+    ul.grid{
+        margin-bottom: 20px;
+    }
+    .galleri .grid li.square{
+        flex-basis: 40%;
+    }
+    .contact {
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+    .contact-info img{
+        width: 100%;
+    }
+    .bottom {
+        padding: 70px 0 30px 0;
+    }
+}
+@media screen and (max-width: 980px){
+    .contact {
+        margin: 30px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+    #my-form h2{
+        font-size: 20px;
+        margin: 10px 20px;
+    }
+    .contact-info img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+    .first {
+        min-height: 70vh;
+    }
+    .first h1{
+        font-size: 60px;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+    .wrapper .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .quick{
+        margin: 20px 80px;
+        padding: 30px 30px;
+    }
+    .galleri .grid li.square{
+        flex-basis: 70%;
+    }
+    .galleri hr {
+        height: 5px;
+        width: 400px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .contact {
+        margin: 30px;
+        margin-bottom: 70px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .contact-info img{
+        width: 50%;
+    }
+    .contact-info{
+        display: inline-block;
+        margin: 20px;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom {
+        flex-direction: column;
+        padding: 50px 40px 20px 40px;
+    }
+    .bottom li i{
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 750px){
+    #my-form {
+        margin: 20px;
+        margin-bottom: 60px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 550px){
+    .first h1 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    header h2{
+        font-size: 19px;
+    }
+    .quick{
+        margin: 20px 40px;
+        padding: 30px 30px;
+    }
+    #my-form{
+        margin: 20px;
+    }
+    #my-form input{
+        width: 200px;
+    }
+    #my-form textarea{
+        width: 270px;
+    }
+    button {
+        margin: 5px 70px;
+    }
+    .contact-info img{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 430px){
+    .first h1 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    header {
+        padding: 10px;
+        flex-wrap: wrap;
+        align-items: flex-start;    
+    }
+    header h2{
+        margin-left: 15px;
+    }
+    .wrapper .container {
+        margin: 30px;
+    }
+    .quick {
+        margin: 20px;
+    }
+    .galleri h3 {
+        font-size: 35px;
+        margin-top: 60px;
+    }
+    .galleri .grid li.square{
+        flex-basis: 85%;
+    }
+    .galleri hr {
+        height: 5px;
+        width: 200px;
+    }
+    ul.grid {
+        margin: 30px;
+        margin-top: 30px;
+    }
+    .bottom li i{
+        color: rgb(105, 105, 105);
+        font-size: 42px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .contact {
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 330px){
+    .first h1 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .wrapper .container {
+        margin: 5px;
+        margin-bottom: 30px;
+    }
+    .info p {
+        font-size: 15px;
+    }
+    .info h3 {
+        font-size: 28px;
+    }
+    .galleri p {
+        width: 75%;
+        font-size: 17px;
+    }
+    .galleri hr {
+        height: 4px;
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #my-form textarea{
+        width: 220px;
+    }
+    #toptag {
+        font-size: 30px;
+        background-color: rgb(255, 239, 146);
+        padding: 15px 25px;
+        border-radius: 200px;
+    }
+}
+/* slut på responsivitet */

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="Vi har bakverk och allt gott du kan tänka dig! Hos oss hittar du moderna bakverk samt dom flesta klassikerna. Allt är till bra priser hos oss på AwesomeCake.">
+    <title>AwesomeCake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Work+Sans:wght@100;200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- anckare för botten taggen, ta sig högst upp på sidan -->
+    <a id="top"></a>
+
+    <!-- Header på sidan - med nav -->
+    <header>
+        <h2><a href="#">awesomecake.se</a></h2>
+        <nav>
+            <ul>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#inspo">Inspo</a></li>
+                <li><a href="#contact-tag">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- slut header -->
+
+    <!-- bakgrundsbilden i toppen av sidan + rubriken -->
+    <section class="first">
+        <div class="back-img" style="background-image: url(img/top.jpg);"></div>
+        <h1>AwesomeCake</h1>
+    </section>
+    <!-- slut bakgrundsbild -->
+
+    <!-- första delen på sidan - text, bild, info, ruta med länk till kontakt -->
+    <div class="wrapper">
+        <div class="container">
+            <section class="info">
+                <h3>Livet ska vara sött!</h3>
+                <p>Det bästa i livet är ju ändå socker och allt mumsigt man kan göra med det! Vi har filosofin att man
+                    ska njuta varje
+                    sekund man har chans till det. Strunta i att äta en sallad till lunch. Käka en saftig muffin eller
+                    varför inte dela på
+                    en tårta med kollegorna. Det är alltid en bra ide att äta något sött. Hos oss hittar du tårtor,
+                    muffins, desserter och
+                    mycket mer!</p>
+                <p>Vill du beställa en citronpaj till eftermiddagsfikat eller en trevånings gräddtårta till
+                    fredagsmyset? Beställ då hos oss! Vi har snabb personal i konditoriet och bra priser. Vi hörs!</p>
+            </section>
+            <aside class="quick">
+                <h3>Vill du beställa en tårta?</h3>
+                <p>Vi kan hjälpa dig med alla dina frågor. Gå vidare ner till <a href="#contact-tag">kontaktdelen</a>
+                    och skicka din beställning till oss!</p>
+            </aside>
+        </div>
+    </div>
+    <!-- slut info delen-->
+
+    <!-- inspiration. lite text och bilder -->
+    <section class="galleri">
+        <h3><a id="inspo" href="#inspo"></a>inspiration</h3>
+        <p>Hos oss finns det alla möjliga godsaker. Vi har många duktiga konditorer som jobbar dygnet runt med att skapa
+            dom mest innovativa konstverken. Men vi gör också såklart alla klassiska bakverks som finns. Här nedanför
+            kan du se lite inspiration.</p>
+        <hr>
+        <ul class="grid">
+            <li class="square"><img src="img/strawberry.jpg" alt="Tartlett med bär och blommor">Tart med bär</li>
+            <li class="square"><img src="img/paj.jpg" alt="Två st hallon och blåbärspaj">Hallon/blåbärspaj</li>
+            <li class="square"><img src="img/flowers.jpg" alt="Citrontårta med glasyr. Dekorarad med blommor">Tårta</li>
+            <li class="square"><img src="img/macarons.jpg" alt="Färgglada macarons">Macarons</li>
+            <li class="square"><img src="img/cupcake.jpg" alt="Vanilj och jordguddsmuffins">Muffins</li>
+            <li class="square"><img src="img/cookietower.jpg" alt="En trave kakor på ett fat">Kakor</li>
+        </ul>
+    </section>
+    <!-- slut på inspirations delen -->
+
+    <!-- Sektion med kontakt formulär och sortiment lista -->
+    <!-- Kontakt -->
+    <div class="contact">
+        <section>
+            <form id="my-form" name="myForm" action="#">
+                <h2><a id="contact-tag" href="#contact-tag"></a> Skicka din beställning här:</h2>
+                <div>
+                    <label for="name">För & efternamn:
+                        <input type="text" name="name" id="name" placeholder="Johan Andersson"></label><br>
+                </div>
+                <div>
+                    <label for="number">Telefonnummer:
+                        <input type="number" name="number" id="number" placeholder="0701234567"></label><br>
+                </div>
+                <div>
+                    <label for="email">Emailadress:
+                        <input type="email" name="email" id="email" placeholder="namn@mejl.se"></label><br>
+                </div>
+                <div>
+                    <label for="message">Meddelande: <br>
+                        <textarea name="message" id="message" cols="50" rows="10"
+                            placeholder="Skriv din beställning här..."></textarea>
+                    </label><br>
+                </div>
+                <div id="error"></div> <br>
+                <br><button>Skicka</button>
+            </form>
+        </section>
+        <!-- slut kontakt -->
+
+        <!-- info om sortimentet -->
+        <aside class="contact-info">
+            <img src="img/cookies.jpg" alt="">
+            <h4>AwesomeCake sortimentet just nu:</h4>
+            <ul>
+                <li>American cookies</li>
+                <li>Pajer - äppel eller blåbär</li>
+                <li>Klassisk prinsess tårta</li>
+                <li>Macarons</li>
+                <li>Muffins</li>
+                <li>Snittkakor</li>
+                <li>Tartletter</li>
+            </ul>
+        </aside>
+        <!-- slut på info -->
+    </div>
+    <!-- slut på sektion med kontakt och info -->
+
+    <!-- foten av sidan -->
+    <div class="btn">
+        <a id="toptag" href="#top">⇧</a>
+    </div>
+    <footer class="bottom">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+        </ul>
+        <p><b>Telefon nr: </b> 08-345 13 31</p>
+        <p><b>Mejl: </b>order@awesomecake.se</p>
+        <p><b>Besök oss: </b>
+            Stengatan 1, 123 45 Stad</p>
+    </footer>
+    <!-- slut på foten -->
+</body>
+
+</html>
